@@ -25,7 +25,7 @@ services:
     volumes:
       - static_prod:/static
   gateway:
-    image: kittygram_gateway
+    image: salavatakhiyarov/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
