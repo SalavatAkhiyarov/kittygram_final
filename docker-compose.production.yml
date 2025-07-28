@@ -21,7 +21,7 @@ services:
   frontend:
     env_file: .env
     image: salavatakhiyarov/kittygram_frontend
-    command: cp -r /app/build/. /static/
+    command: sh -c "cp -r /app/build/. /static/ && echo 'Build copied'"
     volumes:
       - static_prod:/static
   gateway:
