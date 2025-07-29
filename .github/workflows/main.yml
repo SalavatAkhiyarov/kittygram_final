@@ -37,6 +37,7 @@ jobs:
         DB_HOST: 127.0.0.1
         DB_PORT: 5432
         DJANGO_SETTINGS_MODULE: kittygram_backend.settings
+        SECRET_KEY: testkey123
       run: |
         python -m flake8 backend/
         PYTHONPATH=./backend pytest
